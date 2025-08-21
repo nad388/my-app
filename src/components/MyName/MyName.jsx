@@ -1,7 +1,14 @@
 import './MyName.css'
 
 function MyName() {
-	return <h2>My name is Nadezhda.</h2>
+	const cats = ['Lion', 'Tiger', 'Puma']
+	return (
+		<ul style={{ color: 'blue', fontSize: 32 }}>
+			{cats.map(cat => (
+				<li key={cat}>{cat}</li>
+			))}
+		</ul>
+	)
 }
 
 export default MyName
