@@ -1,7 +1,7 @@
-export default function Button() {
-	const handleClick = () => {
-		alert('Oh, yeea!')
-	}
-
-	return <button onClick={handleClick}>Push me</button>
+export default function Button({ label = 'just button', onClick, btnStyles }) {
+	return (
+		<button onClick={onClick} style={btnStyles}>
+			{label}
+		</button>
+	)
 }

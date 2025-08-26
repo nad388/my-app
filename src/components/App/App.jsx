@@ -6,6 +6,9 @@ import './App.css'
 function App() {
 	// const condition = true
 	// const response = '<div>alert("Hack!")</div>'
+	const handleClick = () => {
+		alert('Oh, yeea!')
+	}
 
 	return (
 		// condition && (
@@ -20,7 +23,7 @@ function App() {
 		// 	</>
 		<main className='app'>
 			<Header />
-			<HomePage />
+			<HomePage click={handleClick} />
 			<Footer />
 		</main>
 	)
