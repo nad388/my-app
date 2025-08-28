@@ -1,29 +1,14 @@
-import Button from '../components/Button'
-import TaskList from '../components/TaskList'
-import TextComponent from '../components/TextComponent'
-import UserList from '../components/UserList'
 import './HomePage.css'
 
-export default function HomePage({ click }) {
-	const showMessage = () => {
-		alert('This is message!')
+export default function HomePage({ clicks, setClicks }) {
+	const handleClick = () => {
+		setClicks(clicks + 1)
 	}
+
 	return (
-		<div className='home-page'>
-			<h2>Home page</h2>
-			<p>Welcome!</p>
-			<Button label='push me' onClick={click} />
-			<Button
-				label='some message'
-				onClick={() => {
-					showMessage()
-				}}
-			/>
-			<UserList />
-			{/* <img src={programmer} alt='programmer' />
-			<img src='laptop.jpg' alt='laptop' /> */}
-			<TextComponent />
-			<TaskList />
-		</div>
+		<>
+			<button onClick={handleClick}>Push me</button>
+			<p>Count: {clicks}</p>
+		</>
 	)
 }

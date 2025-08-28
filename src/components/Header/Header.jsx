@@ -1,7 +1,7 @@
 import Button from '../Button'
 import './Header.css'
 
-export default function Header() {
+export default function Header({ clicks }) {
 	const style = {
 		color: 'blue',
 		fontSize: '2rem',
@@ -18,6 +18,7 @@ export default function Header() {
 				btnStyles={{ height: 20, background: 'red' }}
 			/>
 			<Button label='log in' btnStyles={{ height: 20, background: 'green' }} />
+			<p>{clicks}</p>
 		</header>
 	)
 }

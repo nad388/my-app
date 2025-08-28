@@ -1,14 +1,15 @@
+import { useState } from 'react'
 import HomePage from '../../pages/HomePage'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import ThemeToggle from '../ThemeToggle'
 import './App.css'
 
 function App() {
+	const [clicks, setClicks] = useState(0)
+	const [isDarkMode, setIsDarkMode] = useState(false)
 	// const condition = true
 	// const response = '<div>alert("Hack!")</div>'
-	const handleClick = () => {
-		alert('Oh, yeea!')
-	}
 
 	return (
 		// condition && (
@@ -22,8 +23,9 @@ function App() {
 		// 		</div>
 		// 	</>
 		<main className='app'>
-			<Header />
-			<HomePage click={handleClick} />
+			<Header clicks={clicks} />
+			<HomePage clicks={clicks} setClicks={setClicks} />
+			<ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 			<Footer />
 		</main>
 	)
