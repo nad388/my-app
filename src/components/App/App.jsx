@@ -24,7 +24,7 @@ function App() {
 		// 	</>
 		<main className='app'>
 			<Header clicks={clicks} />
-			<HomePage clicks={clicks} setClicks={setClicks} />
+			<HomePage />
 			<ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 			<Footer />
 		</main>
