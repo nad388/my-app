@@ -2,7 +2,6 @@ import { useState } from 'react'
 import HomePage from '../../pages/HomePage'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import ThemeToggle from '../ThemeToggle'
 import './App.css'
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
 		<main className='app'>
 			<Header clicks={clicks} />
 			<HomePage />
-			<ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+			{/* <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />  */}
 			<Footer />
 		</main>
 	)

@@ -1,4 +1,3 @@
-import Button from '../Button'
 import './Header.css'
 
 export default function Header({ clicks }) {
@@ -13,12 +12,12 @@ export default function Header({ clicks }) {
 	return (
 		<header className='container' style={style}>
 			<h1>Title</h1>
-			<Button
+			{/* <Button
 				label='registration'
 				btnStyles={{ height: 20, background: 'red' }}
 			/>
 			<Button label='log in' btnStyles={{ height: 20, background: 'green' }} />
-			<p>{clicks}</p>
+			<p>{clicks}</p> */}
 		</header>
 	)
 }
