@@ -1,4 +1,4 @@
-import RegForm from '../components/RegForm/RegForm'
+import EnhancedComponent from '../components/EnhancedComponent'
 import './HomePage.css'
 
 export default function HomePage() {
@@ -9,7 +9,8 @@ export default function HomePage() {
 			<Greeting isLoggedIn={false} />
 			<Notification messages={messages} />
 			<Notification messages={[]} /> */}
-			<RegForm />
+			{/* <RegForm /> */}
+			<EnhancedComponent />
 		</>
 	)
 }
