@@ -1,4 +1,4 @@
-import ModalPage from '../components/ModalPage'
+import Button from '../components/Button/Button'
 import './HomePage.css'
 
 export default function HomePage() {
@@ -12,7 +12,8 @@ export default function HomePage() {
 			{/* <RegForm /> */}
 			{/* <EnhancedComponent /> */}
 			{/* <Container>This is a child component!</Container> */}
-			<ModalPage />
+			{/* <ModalPage /> */}
+			<Button />
 		</div>
 	)
 }
